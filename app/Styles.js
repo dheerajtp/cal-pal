@@ -28,4 +28,14 @@ export const Styles = StyleSheet.create({
     color: '#fff',
     fontSize: 16,
   },
+
+  buttonContainer: {
+    flexDirection: 'row',
+    justifyContent: 'space-evenly',
+    alignItems: 'center',
+    marginTop: 20,
+  },
+  
+  
+  
 });

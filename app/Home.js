@@ -17,16 +17,18 @@ export default function Home({ navigation }) {
 
   return (
     <View style={Styles.container}>
-      <Text style={Styles.title}>Drork</Text>
-      <TouchableOpacity style={[Styles.button, Styles.loginButton]} onPress={handleLogin}>
-        <Text style={Styles.buttonText}>Login</Text>
-      </TouchableOpacity>
-      <TouchableOpacity style={[Styles.button, Styles.registerButton]} onPress={handleRegister}>
-        <Text style={Styles.buttonText}>Sign Up</Text>
-      </TouchableOpacity>
-      <TouchableOpacity style={[Styles.button, Styles.tryButton]} onPress={handleTry}>
-        <Text style={Styles.buttonText}>Try for Free</Text>
-      </TouchableOpacity>
+      <Text style={[Styles.title, { marginBottom: 20 }]}>Drork</Text>
+      <View style={Styles.buttonContainer}>
+        <TouchableOpacity style={[Styles.button, Styles.loginButton]} onPress={handleLogin}>
+          <Text style={Styles.buttonText}>Login</Text>
+        </TouchableOpacity>
+        <TouchableOpacity style={[Styles.button, Styles.registerButton]} onPress={handleRegister}>
+          <Text style={Styles.buttonText}>Sign Up</Text>
+        </TouchableOpacity>
+        <TouchableOpacity style={[Styles.button, Styles.tryButton]} onPress={handleTry}>
+          <Text style={Styles.buttonText}>Try for Free</Text>
+        </TouchableOpacity>
+      </View>
     </View>
   );
 }
