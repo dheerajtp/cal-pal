@@ -11,9 +11,10 @@
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
-    "assetBundlePatterns": ["**/*"],
-    "scheme": "drork", 
-    
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "scheme": "drork",
     "ios": {
       "supportsTablet": true
     },
@@ -21,7 +22,8 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.example.drork"
     },
     "web": {
       "favicon": "./assets/favicon.png"
