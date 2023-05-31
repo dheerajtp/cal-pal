@@ -17,7 +17,7 @@ export default function Home({ navigation }) {
 
   return (
     <View style={Styles.container}>
-      <Text style={[Styles.title, { marginBottom: 20 }]}>Drork Calorie App</Text>
+      <Text style={[Styles.title, { marginBottom: 20 }]}>Drork Calorie App!!!!</Text>
       <View style={Styles.buttonContainer}>
         <TouchableOpacity style={[Styles.button, Styles.loginButton]} onPress={handleLogin}>
           <Text style={Styles.buttonText}>Login</Text>
