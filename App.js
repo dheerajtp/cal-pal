@@ -6,7 +6,7 @@ import Home from './app/Home';
 import Login from './app/Login';
 import Register from './app/Register';
 import Try from './app/Try';
-
+import Main from './app/Main';
 const Stack = createStackNavigator();
 
 export default function App() {
@@ -17,6 +17,7 @@ export default function App() {
         <Stack.Screen name="Login" component={Login} />
         <Stack.Screen name="Register" component={Register} />
         <Stack.Screen name="Try" component={Try} />
+        <Stack.Screen name="Main" component={Main} />
       </Stack.Navigator>
     </NavigationContainer>
   );
