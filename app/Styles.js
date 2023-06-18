@@ -7,7 +7,7 @@ export const Styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: '#1434A4',
+    backgroundColor: '#fff',
   },
   input: {
     width: 200,
@@ -17,12 +17,12 @@ export const Styles = StyleSheet.create({
     paddingHorizontal: 10,
   },
   button: {
-    width: 200,
-    height: 40,
-    borderRadius: 5,
-    justifyContent: 'center',
+    borderRadius: 8,
+    paddingVertical: 12,
+    paddingHorizontal: 20,
+    marginVertical: 8,
     alignItems: 'center',
-    marginBottom: 10,
+    justifyContent: 'center',
   },
   buttonText: {
     color: '#fff',

@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text, TouchableOpacity } from 'react-native';
+import { View, Text, TouchableOpacity, Image } from 'react-native';
 import { Styles } from './Styles';
 
 export default function Home({ navigation }) {
@@ -16,19 +16,25 @@ export default function Home({ navigation }) {
   };
 
   return (
-    <View style={Styles.container}>
-      <Text style={[Styles.title, { marginBottom: 20 }]}>Drork Calorie App!!!!</Text>
-      <View style={Styles.buttonContainer}>
-        <TouchableOpacity style={[Styles.button, Styles.loginButton]} onPress={handleLogin}>
-          <Text style={Styles.buttonText}>Login</Text>
-        </TouchableOpacity>
-        <TouchableOpacity style={[Styles.button, Styles.registerButton]} onPress={handleRegister}>
-          <Text style={Styles.buttonText}>Sign Up</Text>
-        </TouchableOpacity>
-        <TouchableOpacity style={[Styles.button, Styles.tryButton]} onPress={handleTry}>
-          <Text style={Styles.buttonText}>Try for Free</Text>
-        </TouchableOpacity>
-      </View>
-    </View>
+<View style={Styles.container}>
+  <Text style={[Styles.title, { marginBottom: 20 }]}>Drork Calorie App!!!!</Text>
+  <Image source={require('../assets/avatar.png')} style={{width: 300, height: 300, marginBottom: 20}} /> 
+  <View style={Styles.buttonContainer}>
+    <TouchableOpacity style={[Styles.button, Styles.loginButton, { backgroundColor: '#002D62', marginRight: 10 }]} onPress={handleLogin}>
+      <Text style={[Styles.buttonText, { color: '#FFFFFF' }]}>Login</Text>
+    </TouchableOpacity>
+    <TouchableOpacity style={[Styles.button, Styles.registerButton, { backgroundColor: '#002D62', marginHorizontal: 10 }]} onPress={handleRegister}>
+      <Text style={[Styles.buttonText, { color: '#FFFFFF' }]}>Sign Up</Text>
+    </TouchableOpacity>
+    <TouchableOpacity style={[Styles.button, Styles.tryButton, { backgroundColor: '#002D62', marginLeft: 10 }]} onPress={handleTry}>
+      <Text style={[Styles.buttonText, { color: '#FFFFFF' }]}>Try for Free</Text>
+    </TouchableOpacity>
+  </View>
+</View>
+
+
+
+
+
   );
 }
