@@ -45,6 +45,7 @@ export default function Login() {
       ExpressionAttributeValues: {
         ':email': email,
         ':password': password,
+        
       },
     };
   
