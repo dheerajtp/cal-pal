@@ -14,6 +14,7 @@
     "assetBundlePatterns": [
       "**/*"
     ],
+    
     "scheme": "drork",
     "ios": {
       "supportsTablet": true
