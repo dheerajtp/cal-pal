@@ -1,10 +1,9 @@
 import React, { useState, useEffect } from "react";
 import { View, Text, ScrollView, SafeAreaView, TextInput, Button, Alert } from "react-native";
 import { useNavigation } from "@react-navigation/native";
-import Config from 'react-native-config';
 import { Styles } from "./Styles";
 const AWS = require('aws-sdk');
-
+import Config from 'react-native-config';
 
 AWS.config.update({
   region: Config.AWS_REGION,

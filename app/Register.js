@@ -7,14 +7,16 @@ import { v4 as uuidv4 } from 'uuid';
 import 'react-native-get-random-values';
 import { useNavigation } from "@react-navigation/native";
 
-
+import Config from 'react-native-config';
 
 AWS.config.update({
-  region: 'us-east-2', // Replace with your AWS region
-  accessKeyId: 'AKIATAZJI2XORXITI3PL', // Replace with your AWS access key ID
-  secretAccessKey: 'MTgonJaGYYmps3f9duyZlUb7P6tt4OfQjQvHw4Iy', // Replace with your AWS secret access key
-  endpoint:'https://dynamodb.us-east-2.amazonaws.com'
+  region: Config.AWS_REGION,
+  accessKeyId: Config.AWS_ACCESS_KEY_ID,
+  secretAccessKey: Config.AWS_SECRET_ACCESS_KEY,
+  endpoint: Config.AWS_DYNAMODB_ENDPOINT,
 });
+
+
 
 const documentClient = new AWS.DynamoDB.DocumentClient();
 
@@ -33,10 +35,10 @@ export default function Register() {
   useEffect(() => {
     // Configure AWS SDK once when the component mounts
     AWS.config.update({
-      region: 'us-east-2', // Replace with your AWS region
-      accessKeyId: 'AKIATAZJI2XORXITI3PL', // Replace with your AWS access key ID
-      secretAccessKey: 'MTgonJaGYYmps3f9duyZlUb7P6tt4OfQjQvHw4Iy', // Replace with your AWS secret access key
-      endpoint:'https://dynamodb.us-east-2.amazonaws.com'
+      region: Config.AWS_REGION,
+      accessKeyId: Config.AWS_ACCESS_KEY_ID,
+      secretAccessKey: Config.AWS_SECRET_ACCESS_KEY,
+      endpoint: Config.AWS_DYNAMODB_ENDPOINT,
     });
   }, []);
 
