@@ -12,7 +12,8 @@ export const Styles = StyleSheet.create({
   input: {
     width: 200,
     height: 40,
-    backgroundColor: '#fff',
+    backgroundColor: '#002D62',
+    color:'#fff',
     marginBottom: 10,
     paddingHorizontal: 10,
   },
@@ -33,9 +34,18 @@ export const Styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'space-evenly',
     alignItems: 'center',
+    
     marginTop: 20,
   },
   
+  buttonContainerMain: {
+    flexDirection: 'row',
+  justifyContent: 'center',
+  alignItems: 'center',
+  padding: 10,
+  marginTop: 20,
+  backgroundColor: '#002D62',
+  },
   
   
 });
