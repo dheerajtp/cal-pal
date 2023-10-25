@@ -1,3 +1,5 @@
+[![Image of the repo](assets/avatar.png)]([https://github.com/my-username/my-repo](https://github.com/maxiujin/drork))
+
 # Drork - React Native Calorie Tracking App
 
 Drork is a React Native app that allows users to create an account, log the foods they consume each day, and calculate their total daily calorie intake. The app simplifies the process of tracking dietary habits and helps users maintain a healthier lifestyle.
