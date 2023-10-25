@@ -1,8 +1,8 @@
-[![Image of the repo](assets/avatar.png)]([https://github.com/my-username/my-repo](https://github.com/maxiujin/drork))
+[![Image of the repo](assets/avatar.png)]([https://github.com/my-username/my-repo](https://github.com/maxiujin/Calpal))
 
-# Drork - React Native Calorie Tracking App
+# Calpal - React Native Calorie Tracking App
 
-Drork is a React Native app that allows users to create an account, log the foods they consume each day, and calculate their total daily calorie intake. The app simplifies the process of tracking dietary habits and helps users maintain a healthier lifestyle.
+Calpal is a React Native app that allows users to create an account, log the foods they consume each day, and calculate their total daily calorie intake. The app simplifies the process of tracking dietary habits and helps users maintain a healthier lifestyle.
 
 ## Features
 
@@ -10,7 +10,7 @@ Drork is a React Native app that allows users to create an account, log the food
 
 - **Food Logging**: After registering, users can log the foods they eat throughout the day, specifying the name of the food item and its calorie count.
 
-- **Calorie Calculation**: Drork automatically calculates the total daily calorie intake based on the foods logged by the user.
+- **Calorie Calculation**: Calpal automatically calculates the total daily calorie intake based on the foods logged by the user.
 
 ## Todo
 
@@ -18,11 +18,11 @@ Drork is a React Native app that allows users to create an account, log the food
 
 ## Getting Started
 
-To get started with Drork, follow these steps:
+To get started with Calpal, follow these steps:
 
 ```bash
 # Clone the Repository
-git clone https://github.com/yourusername/drork.git
+git clone https://github.com/yourusername/Calpal.git
 ````
 # Installation: Install the necessary dependencies using npm or yarn.
 ```bash
@@ -42,7 +42,7 @@ npx react-native run-ios     # For iOS
 
 
 ## Contributing and License
-**Contributing**: Contributions are welcome! If you'd like to contribute to Drork, please follow these guidelines:
+**Contributing**: Contributions are welcome! If you'd like to contribute to Calpal, please follow these guidelines:
  - Fork the repository.
  -  Create a new branch for your feature or bug fix.
  -  Make your changes and test them thoroughly.
