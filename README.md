@@ -21,18 +21,23 @@ To get started with Drork, follow these steps:
 ```bash
 # Clone the Repository
 git clone https://github.com/yourusername/drork.git
-
+````
 # Installation: Install the necessary dependencies using npm or yarn.
+```bash
 npm install
+````
 # or
+```bash
 yarn install
-
+````
 # Run the App: Start the development server and run the app on an emulator or device.
+
+```bash
 npx react-native start
 npx react-native run-android # For Android
 npx react-native run-ios     # For iOS
-
 ````
+
 
 ## Contributing and License
 **Contributing**: Contributions are welcome! If you'd like to contribute to Drork, please follow these guidelines:
@@ -42,3 +47,7 @@ npx react-native run-ios     # For iOS
   - Create a pull request to merge your changes into the main branch.
 
 **License**: This project is licensed under the MIT License - see the LICENSE file for details.
+
+## Acknowledgments
+
+We would like to thank the open-source community and the developers of React Native for their valuable contributions.
