@@ -31,3 +31,14 @@ yarn install
 npx react-native start
 npx react-native run-android # For Android
 npx react-native run-ios     # For iOS
+
+````
+
+## Contributing and License
+**Contributing**: Contributions are welcome! If you'd like to contribute to Drork, please follow these guidelines:
+ - Fork the repository.
+ -  Create a new branch for your feature or bug fix.
+ -  Make your changes and test them thoroughly.
+  - Create a pull request to merge your changes into the main branch.
+
+**License**: This project is licensed under the MIT License - see the LICENSE file for details.
