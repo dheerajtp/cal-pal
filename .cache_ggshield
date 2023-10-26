@@ -1,0 +1,1 @@
+{"last_found_secrets": [{"name": "Generic High Entropy Secret - .env", "match": "5b6e707e931266269b74d8a7152ce7723d5deda4fb6ae1d6a567f3fe88f57d9f"}, {"name": "OpenAI API Key - .env", "match": "90812c93b3f16946a4955fd5e6a0b1c666be7628acddb19a0a74ede7e285cbad"}, {"name": "AWS Keys - app/Login.js", "match": "34d13e03549fca5fb49fdb84812cf11d4a6fbe6065eb671e70484942f81c2257"}]}
