@@ -24,10 +24,10 @@ export default function Login() {
   useEffect(() => {
     // Configure AWS SDK once when the component mounts
     AWS.config.update({
-      region: 'us-east-2', // Replace with your AWS region
-      accessKeyId: 'AKIATAZJI2XORXITI3PL', // Replace with your AWS access key ID
-      secretAccessKey: 'MTgonJaGYYmps3f9duyZlUb7P6tt4OfQjQvHw4Iy', // Replace with your AWS secret access key
-      endpoint:'https://dynamodb.us-east-2.amazonaws.com'
+      region: Config.AWS_REGION,
+      accessKeyId: Config.AWS_ACCESS_KEY_ID,
+      secretAccessKey: Config.AWS_SECRET_ACCESS_KEY,
+      endpoint: Config.AWS_DYNAMODB_ENDPOINT,
     });
   }, []);
 
