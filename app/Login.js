@@ -103,7 +103,7 @@ export default function Login() {
   
   return (
     <View style={[Styles.container, { backgroundColor: "#1434A4" }]}>
-      <Text style={{ color: "#fff", marginBottom: 20 }}>Drork! Calorie App!</Text>
+      <Text style={{ color: "#fff", marginBottom: 20 }}>Calpal! Calorie App!</Text>
       <TextInput
         placeholder="Email"
         label="Email"

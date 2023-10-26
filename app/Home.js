@@ -17,7 +17,7 @@ export default function Home({ navigation }) {
 
   return (
 <View style={Styles.container}>
-  <Text style={[Styles.title, { marginBottom: 20 }]}>Drork Calorie App!!!!</Text>
+  <Text style={[Styles.title, { marginBottom: 20 }]}>Calpal Calorie App!!!!</Text>
   <Image source={require('../assets/avatar.png')} style={{width: 300, height: 300, marginBottom: 20}} /> 
   <View style={Styles.buttonContainer}>
     <TouchableOpacity style={[Styles.button, Styles.loginButton, { backgroundColor: '#002D62', marginRight: 10 }]} onPress={handleLogin}>
