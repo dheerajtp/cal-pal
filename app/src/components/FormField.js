@@ -1,6 +1,6 @@
 import { Controller } from "react-hook-form";
 import { View, TextInput, Text, Button } from "react-native";
-import { Styles } from "../../Styles";
+import { Styles } from "../assets/style/Styles";
 
 const FormField = ({
   name,
@@ -19,14 +19,14 @@ const FormField = ({
           placeholder={placeholder}
           onChangeText={field.onChange}
           value={field.value}
-          style={Styles.input}
+          style={Styles.inputNew}
           keyboardType={keyboardType}
           secureTextEntry={secureTextEntry}
         />
       )}
     />
     {errors && errors[name] && (
-      <Text style={{ color: "red", padding: 2 }}>{errors[name].message}</Text>
+      <Text style={Styles.errorMessage}>{errors[name].message}</Text>
     )}
   </View>
 );

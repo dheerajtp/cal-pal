@@ -5,18 +5,18 @@ import {
   ScrollView,
   SafeAreaView,
   TextInput,
-  Button,
   Alert,
 } from "react-native";
 import { useNavigation } from "@react-navigation/native";
-import { Styles } from "./Styles";
+import { Styles } from "../assets/style/Styles";
 const AWS = require("aws-sdk");
 import Config from "react-native-config";
 
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
-import { loginSchema } from "./src/utils/validators";
-import FormField from "./src/components/FormField";
+import { loginSchema } from "../utils/validators";
+import FormField from "../components/FormField";
+import Button from "../components/Button";
 
 AWS.config.update({
   region: Config.AWS_REGION,
@@ -108,8 +108,8 @@ export default function Login() {
   }, []);
 
   return (
-    <View style={[Styles.container, { backgroundColor: "#1434A4" }]}>
-      <Text style={{ color: "#fff", marginBottom: 20 }}>
+    <View style={Styles.container}>
+      <Text style={{ color: "#545162", marginBottom: 20 }}>
         Calpal! Calorie App!
       </Text>
 

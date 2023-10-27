@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
-import { View, TextInput, Button, Alert, Text } from "react-native";
+import { View, Alert } from "react-native";
 
-import { Styles } from "./Styles";
+import { Styles } from "../assets/style/Styles";
 import AWS from "aws-sdk";
 import { v4 as uuidv4 } from "uuid";
 import "react-native-get-random-values";
@@ -11,8 +11,9 @@ import Config from "react-native-config";
 
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
-import { registrationSchema } from "./src/utils/validators";
-import FormField from "./src/components/FormField";
+import { registrationSchema } from "../utils/validators";
+import FormField from "../components/FormField";
+import Button from "../components/Button";
 
 AWS.config.update({
   region: Config.AWS_REGION,
@@ -129,7 +130,7 @@ export default function Register() {
   };
 
   return (
-    <View style={[Styles.container, { backgroundColor: "#1434A4" }]}>
+    <View style={Styles.container}>
       <FormField
         name="firstName"
         control={control}
