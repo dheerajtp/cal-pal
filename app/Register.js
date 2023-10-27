@@ -9,7 +9,7 @@ import { useNavigation } from "@react-navigation/native";
 
 import Config from "react-native-config";
 
-import { useForm, Controller } from "react-hook-form";
+import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import { registrationSchema } from "./src/utils/validators";
 import FormField from "./src/components/FormField";
@@ -28,7 +28,6 @@ export default function Register() {
     control,
     handleSubmit,
     formState: { errors },
-    setValue,
   } = useForm({
     resolver: yupResolver(registrationSchema),
   });

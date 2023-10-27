@@ -1,3 +1,4 @@
 import registrationSchema from "./registrationValidation";
+import loginSchema from "./loginValidation";
 
-export { registrationSchema };
+export { registrationSchema, loginSchema };
