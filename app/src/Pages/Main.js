@@ -1,6 +1,13 @@
 import React, { useState } from "react";
-import { View, Text, TextInput, Alert, StyleSheet, TouchableOpacity } from 'react-native';
-import { Styles } from './Styles';
+import {
+  View,
+  Text,
+  TextInput,
+  Alert,
+  StyleSheet,
+  TouchableOpacity,
+} from "react-native";
+import { Styles } from "../assets/style/Styles";
 import axios from "axios";
 import { edamam_api_key } from "@env";
 
@@ -8,18 +15,18 @@ import { edamam_api_key } from "@env";
 console.log(edamam_api_key); // This will print your Edamam API key
 
 export default function Main() {
-  const [meals, setMeals] = useState(['']);
+  const [meals, setMeals] = useState([""]);
   const [calorieEstimates, setCalorieEstimates] = useState([]);
 
   const handleAddMeal = () => {
-    setMeals([...meals, '']);
-  }
+    setMeals([...meals, ""]);
+  };
 
   const handleMealChange = (text, index) => {
     const newMeals = [...meals];
     newMeals[index] = text;
     setMeals(newMeals);
-  }
+  };
 
   const handleSubmit = async () => {
     const newCalorieEstimates = [];
@@ -29,8 +36,8 @@ export default function Main() {
       newCalorieEstimates.push(estimatedCalories);
     }
     setCalorieEstimates(newCalorieEstimates);
-    Alert.alert('Meals submitted!', `Here are your meals: ${meals.join(', ')}`);
-  }
+    Alert.alert("Meals submitted!", `Here are your meals: ${meals.join(", ")}`);
+  };
 
   const totalCalories = () => {
     let total = 0;
@@ -38,7 +45,7 @@ export default function Main() {
       total += calories;
     }
     return total;
-  }
+  };
 
   return (
     <View style={Styles.container}>
@@ -63,10 +70,11 @@ export default function Main() {
         </TouchableOpacity>
       </View>
       {calorieEstimates.map((calories, index) => (
-        <Text key={index} style={Styles.estimateText}>Meal {index + 1}: {calories} calories</Text>
+        <Text key={index} style={Styles.estimateText}>
+          Meal {index + 1}: {calories} calories
+        </Text>
       ))}
-            <Text style={Styles.estimateText}>Total Calories: {totalCalories()}</Text>
-
+      <Text style={Styles.estimateText}>Total Calories: {totalCalories()}</Text>
     </View>
   );
 }
